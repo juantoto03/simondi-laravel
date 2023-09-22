@@ -1,0 +1,28 @@
+<?php
+
+namespace App\Http\Requests\Estatuses;
+
+use Illuminate\Foundation\Http\FormRequest;
+
+class PutRequest extends FormRequest
+{
+    /**
+     * Determine if the user is authorized to make this request.
+     */
+    public function authorize(): bool
+    {
+        return true;
+    }
+
+    /**
+     * Get the validation rules that apply to the request.
+     *
+     * @return array<string, \Illuminate\Contracts\Validation\ValidationRule|array<mixed>|string>
+     */
+    public function rules(): array
+    {
+        return [
+            "est_nombre" => "required|min:1|unique:estatuses,est_nombre,".$this->route("estatus")->id,
+        ];
+    }
+}
