@@ -29,8 +29,6 @@ Route::group(['prefix' => 'dashboard', 'middleware' => 'auth'], function () {
         'estatuses' => App\Http\Controllers\Dashboard\Estatuses\EstatusesController::class,
         'cores' => App\Http\Controllers\Dashboard\Cores\CoresController::class,
     ]);
-    Route::get('/importar-excel', 'App\Http\Controllers\Dashboard\Excel\ImportExcel@index');
-    Route::post('/importar-excel', 'App\Http\Controllers\Dashboard\Excel\ImportExcel@index@importar')->name('importar-excel');
 });
 
 Route::middleware('auth')->group(function () {

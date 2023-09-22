@@ -3,8 +3,10 @@
 namespace App\Http\Controllers\Dashboard\Tipos;
 
 use App\Models\Tipos;
+use App\Imports\TiposImport;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Maatwebsite\Excel\Facades\Excel;
 use App\Http\Requests\Tipos\PutRequest;
 use App\Http\Requests\Tipos\StoreRequest;
 
