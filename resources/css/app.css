@@ -4,25 +4,25 @@
 
 /* bases */
 h1 {
-    @apply text-4xl mb-3
+    @apply text-4xl 
 }
 /* bases */
 
 /* Tabla basica */
 .table {
-    @apply table-auto min-w-full
+    @apply table-auto min-w-full text-sm
 }
 
 .table th {
-    @apply px-6 py-2 bg-gray-50 font-medium text-gray-500 uppercase border leading-4 tracking-widest
+    @apply px-4 py-2 bg-gray-50 font-medium text-gray-500 uppercase border border-solid border-neutral-300 leading-4 tracking-widest
 }
 
 .table tr {
-    @apply border
+    @apply border border-solid border-neutral-300
 }
 
 .table td {
-    @apply px-4 py-4 whitespace-normal
+    @apply px-4 whitespace-normal bg-gray-50
 }
 /* Tabla basica */
 
@@ -34,11 +34,15 @@ h1 {
 
 /* btn */
 .btn {
-    @apply border rounded px-3 py-2 text-white font-bold inline-block transition-all
+    @apply border rounded px-2 py-1 text-white font-bold inline-block transition-all
+}
+
+.btn-form {
+    @apply inline-block
 }
 
 .btn-danger {
-    @apply bg-red-600 hover:bg-red-800 border-red-600
+    @apply bg-red-500 hover:bg-red-700 border-red-500
 }
 
 .btn-success {
@@ -46,13 +50,34 @@ h1 {
 }
 
 .btn-primary {
-    @apply bg-blue-600 hover:bg-blue-800 border-blue-600
+    @apply bg-blue-500 hover:bg-blue-700 border-blue-500
+}
+
+.btn-secundary {
+    @apply bg-purple-500 hover:bg-purple-700 border-purple-500
 }
 
 .btn-warning {
     @apply bg-yellow-600 hover:bg-yellow-800 border-yellow-600
 }
+
+.btn-edit {
+    @apply bg-purple-400 hover:bg-purple-600 border-purple-400
+}
+
+.btn-upload {
+    @apply bg-orange-400 hover:bg-orange-600 border-orange-400
+}
+
+.btn-searchs {
+    @apply bg-blue-500 hover:bg-blue-700 border-blue-500 h-10 rounded-r-lg
+}
 /* btn */
+
+/* icon */
+.div-aling-end {
+    @apply flex justify-end items-center
+}
 
 /* card */
 .card {
@@ -63,3 +88,35 @@ h1 {
     @apply bg-white
 }
 /* card */
+
+/* sildebar */
+.a-menu {
+    @apply  flex h-12 cursor-pointer items-center truncate rounded-[5px] px-6 py-4 text-[0.875rem] text-white outline-none transition duration-300 ease-linear hover:bg-orange-100/50 hover:text-inherit hover:outline-none focus:bg-gray-300/30 focus:text-inherit focus:outline-none active:bg-gray-300/30 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-white/10 dark:focus:bg-white/10 dark:active:bg-white/10
+}
+
+.a-submenu {
+    @apply flex h-6 cursor-pointer items-center truncate rounded-[5px] py-4 pl-[3.4rem] pr-6 text-[0.78rem] text-white outline-none transition duration-300 ease-linear hover:bg-orange-100/50 hover:text-inherit hover:outline-none focus:bg-gray-300/30 focus:text-inherit focus:outline-none active:bg-gray-300/30 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-white/10 dark:focus:bg-white/10 dark:active:bg-white/10
+}
+/* sildebar */
+
+/* sapm */
+.spam {
+    @apply absolute right-0 ml-auto mr-[0.8rem] transition-all duration-300 ease-linear motion-reduce:transition-none [&>svg]:h-3 [&>svg]:w-3 [&>svg]:fill-white dark:[&>svg]:fill-gray-300
+}
+/* sapm */
+
+.sildebar {
+    @apply bg-orange-500 text-center
+}
+
+.nav {
+    @apply text-center pt-10 py-6 relative w-full flex-wrap items-center justify-between bg-gray-200 text-neutral-500 shadow-lg  focus:text-neutral-700 dark:bg-neutral-600
+}
+
+.cls-1,.cls-2 {
+    fill: #fff;
+}
+
+.cls-2 {
+    fill-rule: evenodd;
+}

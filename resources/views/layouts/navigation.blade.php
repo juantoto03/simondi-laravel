@@ -15,21 +15,6 @@
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
-                    <x-nav-link :href="route('cores.index')" :active="request()->routeIs('cores.index')">
-                        {{ __('Cores') }}
-                    </x-nav-link>
-                    <x-nav-link :href="route('modelos.index')" :active="request()->routeIs('modelos.index')">
-                        {{ __('Modelos') }}
-                    </x-nav-link>
-                    <x-nav-link :href="route('marcas.index')" :active="request()->routeIs('marcas.index')">
-                        {{ __('Marcas') }}
-                    </x-nav-link>
-                    <x-nav-link :href="route('tipos.index')" :active="request()->routeIs('tipos.index')">
-                        {{ __('Tipos') }}
-                    </x-nav-link>
-                    <x-nav-link :href="route('estatuses.index')" :active="request()->routeIs('estatuses.index')">
-                        {{ __('Estatus') }}
-                    </x-nav-link>
                 </div>
             </div>
 
